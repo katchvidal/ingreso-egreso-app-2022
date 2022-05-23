@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     RouterModule,
-    RegisterRoutingModule
+    RegisterRoutingModule,
   ]
 })
 export class RegisterModule { }
