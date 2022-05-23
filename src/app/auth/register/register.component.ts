@@ -10,15 +10,14 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 export class RegisterComponent implements OnInit {
 
   constructor(
-    private authService : AuthService
+    private authService : AuthService,
+    
   ) { }
 
   ngOnInit(): void {
   }
 
   onSubmit( data : any ){
-    console.log(data );
-    //this.authService.createanUser( data.nombre, data.email, data.password )
-    
+    this.authService.SignUp( data.email, data.password, data.firstname )
   }
 }

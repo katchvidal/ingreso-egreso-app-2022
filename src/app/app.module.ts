@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore, FirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { AngularFireModule } from '@angular/fire/compat';
   imports: [
     BrowserModule,
     AuthModule,
+    DashboardModule,
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireModule.initializeApp(environment.firebase),
