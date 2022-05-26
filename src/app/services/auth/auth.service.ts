@@ -62,7 +62,7 @@ export class AuthService {
 
   // Sign in with email/password
   SignIn(email: string, password: string) {
-    return this.AngularFireAuth
+    this.AngularFireAuth
       .signInWithEmailAndPassword(email, password)
       .then((result) => {
         this.ngZone.run(() => {
